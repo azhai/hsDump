@@ -1,0 +1,30 @@
+db:
+    host:       localhost
+    port:       3306
+    user:       dba
+    password:   password
+    database:   test
+    socket:     /var/lib/mysql/mysql.sock
+
+sql:
+    table:      users
+    index:      created_at
+    order:      id
+    fields:     
+        - id
+        - username
+        - password
+        - created_at
+        - modified_at
+        - is_active
+
+days:
+    - "2015-01-01"
+    - "2015-02-01"
+    - "2015-03-01"
+    - "2015-04-01"
+    - "2015-05-01"
+
+out:
+    path:   ./data
+    pre:    users-
